@@ -1,0 +1,75 @@
+{
+  "operationConfig" : {
+    "name" : "GetRefData3776",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"LastUpdate\" outputpath=\"lastUpdate\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"DailyLogQuestions\" outputpath=\"DailyLogQuestions\">\n            <set-param inputpath=\"ID\" outputpath=\"QuestionId\"/>\n            <set-param inputpath=\"Question\" outputpath=\"Question\"/>\n            <set-param inputpath=\"Group\" outputpath=\"Group\"/>\n            <set-param inputpath=\"DeleteFlag\" outputpath=\"DeleteFlag\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"DailyLogQuestions\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"CMOOrchSvcRefData (1.0).GetRefData\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:DailyLogQuestions:LastUpdate:\",\"to\":\"target:lastUpdate:\",\"fromPort\":\"source:DailyLogQuestions:LastUpdate:\",\"toPort\":\"target:lastUpdate:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"DailyLogQuestions\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"CMOOrchSvcRefData (1.0).GetRefData\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:DailyLogQuestions:Question:\",\"to\":\"target:DailyLogQuestions:Question:\",\"fromPort\":\"source:DailyLogQuestions:Question:\",\"toPort\":\"target:DailyLogQuestions:Question:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:DailyLogQuestions:Group:\",\"to\":\"target:DailyLogQuestions:Group:\",\"fromPort\":\"source:DailyLogQuestions:Group:\",\"toPort\":\"target:DailyLogQuestions:Group:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:DailyLogQuestions:DeleteFlag:\",\"to\":\"target:DailyLogQuestions:DeleteFlag:\",\"fromPort\":\"source:DailyLogQuestions:DeleteFlag:\",\"toPort\":\"target:DailyLogQuestions:DeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:DailyLogQuestions:ID:\",\"to\":\"target:DailyLogQuestions:QuestionId:\",\"fromPort\":\"source:DailyLogQuestions:ID:\",\"toPort\":\"target:DailyLogQuestions:QuestionId:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "CMOOrchSvcRefData",
+      "serviceVersion" : "1.0",
+      "operationName" : "GetRefData"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "DailyLogQuestions",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

@@ -1,0 +1,1 @@
+{"policyScope":"local","policyInfo":"{\"identitySvcs\":[{\"name\":\"ConstructionConEdOAuth\",\"version\":\"1.0\",\"type\":\"identity\",\"conflictType\":\"name\",\"supportedConflictResolutionPolicies\":[\"override\",\"reuse\"],\"conflictResolutionPolicy\":\"reuse\"}],\"middlewareSvcs\":[],\"dataAdapters\":[],\"logicPackages\":[],\"customCodeResources\":[]}"}

@@ -1,0 +1,23 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
+      "Name" : "LastUpdate"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "0",
+      "InactiveValue" : "1",
+      "Name" : "DeleteFlag"
+    },
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

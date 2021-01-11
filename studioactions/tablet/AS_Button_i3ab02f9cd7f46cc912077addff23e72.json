@@ -1,0 +1,24 @@
+{
+    "AS_Button_i3ab02f9cd7f46cc912077addff23e72": {
+        "id": "AS_Button_i3ab02f9cd7f46cc912077addff23e72",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSync",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d2049dc40e7b42e7a7eead35e7c3a554"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g4c0234ade074c50b12b935aa1f47bf8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onClickSync();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

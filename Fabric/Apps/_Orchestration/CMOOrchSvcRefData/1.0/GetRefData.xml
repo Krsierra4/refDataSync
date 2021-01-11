@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="" groupType="" id="GetRefData" passwordencrypted="" security="authorized_app_user" type="CompositeConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="exec_type" value="Concurrent"/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetBaseMaterialRestore"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetBaseMaterials"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetBoroughs"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetDLRQuestions"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetInspectors"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetLanes"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetParkingRestrictions"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetPoints"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetSpans"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetSurfaceMaterials"/>
+        <config-param api-version="1.0" appid="CMOIntSvcRefData" name="service" value="GetTypeSizes"/>
+    </service-config>
+    <service-input passthrough="false"/>
+    <service-output passthrough="false"/>
+</service>

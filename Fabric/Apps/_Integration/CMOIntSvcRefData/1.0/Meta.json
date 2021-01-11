@@ -1,0 +1,7 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "CMOAppSubscriptionKeyPreprocessor.jar",
+    "type" : "jar"
+  } ]
+}

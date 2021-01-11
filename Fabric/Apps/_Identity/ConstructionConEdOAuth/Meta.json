@@ -1,0 +1,19 @@
+{
+  "name" : "ConstructionConEdOAuth",
+  "displayName" : "ConstructionConEdOAuth",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"auth_type\":\"oauth2\",\"enable_global_callback\":false,\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"\",\"last_name\":\"\",\"custom_profile_attribute_selectors\":{},\"first_name\":\"\",\"email\":\"\"},\"endpoint\":{\"location\":\"\",\"type\":\"none\",\"value\":\"\"},\"request_method\":\"GET\"},\"dependent_providers\":[],\"client_authentication\":{\"authentication_scheme\":\"form\",\"client_secret\":\"aGPLRy9wNI+dV+S/3dnATeb8uh1uvf3mBGL6cVwmfi4=\",\"client_id\":\"454920cd-3480-47fb-a332-b12d9de5c085\"},\"authorization_endpoint\":\"https://login.microsoftonline.com/e9aef9b7-25ca-4518-a881-33e546773136/oauth2/authorize?resource=454920cd-3480-47fb-a332-b12d9de5c085\",\"logout_url\":\"https://login.microsoftonline.com/e9aef9b7-25ca-4518-a881-33e546773136/oauth2/logout?post_logout_redirect_uri=https%3A%2F%2Fdfac-dev.azurewebsites.net\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"revoke_url\":\"\",\"grant_type\":\"authorization_code\",\"authentication_scheme\":\"header\",\"oauthProviderType\":\"default\",\"token_endpoint\":\"https://login.microsoftonline.com/e9aef9b7-25ca-4518-a881-33e546773136/oauth2/token?resource=454920cd-3480-47fb-a332-b12d9de5c085\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false,
+    "oauth2_success_url_config" : {
+      "allow_any" : true,
+      "allowed_urls" : [ ],
+      "default" : -1
+    }
+  },
+  "ssoenabled" : false
+}

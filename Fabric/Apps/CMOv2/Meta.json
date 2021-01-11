@@ -1,0 +1,21 @@
+{
+  "subType" : "customapp",
+  "description" : "CMOv2",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "CMOIntSvcRefData",
+    "version" : "1.0",
+    "etag" : "9a69db09-0847-4e7f-87d0-5ecdb45cfa7f"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "CMOOrchSvcRefData",
+    "version" : "1.0",
+    "etag" : "118306d3-52cf-4912-9b80-37f604c859f7"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "CMOObjSvcRefData",
+    "version" : "1.0",
+    "etag" : "ba747ad4-f83a-4435-938a-db88a5941700"
+  } ],
+  "identity" : [ "ConstructionConEdOAuth" ]
+}

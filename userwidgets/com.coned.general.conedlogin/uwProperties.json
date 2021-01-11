@@ -1,0 +1,73 @@
+{
+    "classname": "conedlogin",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b0236f58a8da4faf973c60b8520c32ff",
+                    "paramList": [],
+                    "propertyKey": "setCallbacks",
+                    "pw": {
+                        "displayName": "setCallbacks",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ef51f41490144e8183c67136ad793c37",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f9b19b1a55c748daadd58c46e8e5eaad",
+                    "paramList": [],
+                    "propertyKey": "invokeIdentityService",
+                    "pw": {
+                        "displayName": "invokeIdentityService",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ef51f41490144e8183c67136ad793c37",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "ConEdOAuth",
+                    "group": "General",
+                    "kuid": "a33f5750b5074c2e8abce9ba2ef433de",
+                    "originalPropertyKey": "identityServiceID",
+                    "propertyIndex": 2,
+                    "propertyKey": "identityServiceID",
+                    "pw": {
+                        "displayName": "identityServiceID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ef51f41490144e8183c67136ad793c37",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.coned.general",
+    "version": "1.0.0"
+}

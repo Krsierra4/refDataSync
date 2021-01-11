@@ -1,0 +1,75 @@
+{
+  "operationConfig" : {
+    "name" : "GetRefData8621",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"LastUpdate\" outputpath=\"lastUpdate\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"Boroughs\" outputpath=\"Boroughs\">\n            <set-param inputpath=\"ID\" outputpath=\"BoroughId\"/>\n            <set-param inputpath=\"Borough\" outputpath=\"Borough\"/>\n            <set-param inputpath=\"DeleteFlag\" outputpath=\"DeleteFlag\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Boroughs\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"CMOOrchSvcRefData (1.0).GetRefData\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Boroughs:LastUpdate:\",\"to\":\"target:lastUpdate:\",\"fromPort\":\"source:Boroughs:LastUpdate:\",\"toPort\":\"target:lastUpdate:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Boroughs\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"CMOOrchSvcRefData (1.0).GetRefData\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:Boroughs:Borough:\",\"to\":\"target:Boroughs:Borough:\",\"fromPort\":\"source:Boroughs:Borough:\",\"toPort\":\"target:Boroughs:Borough:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:Boroughs:DeleteFlag:\",\"to\":\"target:Boroughs:DeleteFlag:\",\"fromPort\":\"source:Boroughs:DeleteFlag:\",\"toPort\":\"target:Boroughs:DeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Boroughs:ID:\",\"to\":\"target:Boroughs:BoroughId:\",\"fromPort\":\"source:Boroughs:ID:\",\"toPort\":\"target:Boroughs:BoroughId:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "CMOOrchSvcRefData",
+      "serviceVersion" : "1.0",
+      "operationName" : "GetRefData"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Boroughs",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}
